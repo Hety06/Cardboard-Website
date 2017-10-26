@@ -1,0 +1,152 @@
+body {
+    background-color: #eee;
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 800px;
+    padding-left: 20px;
+    padding-right: 20px;
+}
+
+.title{
+  grid-area: title;
+  color: #777;
+  text-align: center;
+  font-family: 'Merriweather Sans', sans-serif;
+  font-size: 30px;
+}
+
+.desc{
+  grid-area: desc;
+  font-family: 'Bitter', serif;
+  font-size: 25px;
+  color: #222;
+  text-align: center;
+}
+
+.desc2{
+  grid-area: desc2;
+  font-family: 'Bitter', serif;
+  font-size: 25px;
+  color: #222;
+  text-align: center;
+}
+
+.brag{
+  grid-area: brag;
+  font-family: 'Bitter', serif;
+  font-size: 25px;
+  color: #222;
+  text-align: center;
+}
+
+.link{
+  grid-area: link;
+  font-family: 'Bitter', serif;
+  font-size: 25px;
+  color: #222;
+  text-align: center;
+}
+
+.image{
+  grid-area: image;
+}
+
+.image2{
+  grid-area: image2;
+}
+
+.image3{
+  grid-area: image3;
+}
+
+.grid{
+  display: grid;
+  align-items: center;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: auto;
+  grid-column-gap: 10px;
+  grid-row-gap: 10px;
+  grid-template-areas:
+    "title title title"
+    "desc image image"
+    "desc image image"
+    "image3 brag brag"
+    "desc2 image2 image2"
+    "desc2 link link";
+}
+
+h1 {
+
+}
+
+h2 {
+
+}
+
+p {
+
+}
+
+img {
+    max-width: 100%;
+}
+
+a:link {
+    color: #ff0000;
+    text-decoration: none;
+}
+
+a:visited {
+    color: #aa0;
+}
+
+a:hover {
+    color: #88f;
+    text-decoration: none;
+}
+
+a:active {
+    color: #ffbb00;
+}
+
+@media (max-width: 780px){
+
+.grid{
+  display: grid;
+  align-items: center;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: auto;
+  grid-column-gap: 10px;
+  grid-row-gap: 10px;
+  grid-template-areas:
+    "title title title"
+    "desc desc desc"
+    ". image ."
+    "image2 brag brag"
+    "desc2 desc2 image3"
+    "link link link";
+  }
+
+}
+
+@media (max-width: 400px){
+
+.grid{
+  display: grid;
+  align-items: center;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: auto;
+  grid-column-gap: 10px;
+  grid-row-gap: 10px;
+  grid-template-areas:
+    "title title title"
+    "desc desc desc"
+    "image image image"
+    "brag brag brag"
+    "image2 image2 image2"
+    "desc2 desc2 desc2"
+    "image3 image3 image3"
+    "link link link";
+  }
+
+}
